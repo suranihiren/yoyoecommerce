@@ -2,7 +2,7 @@
 
 import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:yoyoecommerce/app_element/app_color.dart';
 
@@ -26,7 +26,13 @@ class Utils {
    showFlushbar(context: context, flushbar: Flushbar(message:message,backgroundColor: black,
       title: "SAD",messageColor: white,
      duration: Duration(seconds: 3),)..show(context));
-
+ }
+ static snackBar(String message , BuildContext context){
+      return ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+            backgroundColor: black,
+            content: Text(message))
+      );
  }
 
 }
