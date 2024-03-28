@@ -18,13 +18,15 @@ class AppTheme {
       dialogBackgroundColor: white,
       textTheme: TextTheme(
           bodyLarge: TextStyle(
-              color: gray3, fontSize: 18.sp, fontWeight: FontWeight.w500),
+              color: gray3, fontSize: 2.5.sp, fontWeight: FontWeight.w500),
           bodyMedium: TextStyle(
               color: gray3, fontSize: 15.sp, fontWeight: FontWeight.w400),
           bodySmall: TextStyle(
               color: gray3, fontSize: 13.sp, fontWeight: FontWeight.w400),
           titleLarge: TextStyle(
-              color: gray3, fontSize: 20.sp, fontWeight: FontWeight.w600)),
+              color: black, fontSize: 4.5.sp, fontWeight: FontWeight.w600),
+      titleMedium:TextStyle(
+          color: black, fontSize: 3.5.sp, fontWeight: FontWeight.w400), ),
       splashColor: gray1,
       snackBarTheme: SnackBarThemeData(
           backgroundColor: gray3,

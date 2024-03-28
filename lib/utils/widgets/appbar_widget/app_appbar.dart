@@ -1,17 +1,18 @@
-import 'package:provider/provider.dart';
-import 'package:yoyoecommerce/utils/widgets/text_field_widget.dart';
-import 'package:yoyoecommerce/view/home/provider.dart';
-import '../../../app_element/header.dart';
+import 'package:flutter/material.dart';
+import 'package:yoyoecommerce/app_element/header.dart';
 
-class WebAppBar extends StatelessWidget {
-  const WebAppBar({super.key});
+class AppAppbar extends StatefulWidget {
+  const AppAppbar({super.key});
 
+  @override
+  State<AppAppbar> createState() => _AppAppbarState();
+}
+
+class _AppAppbarState extends State<AppAppbar> {
   @override
   Widget build(BuildContext context) {
     TextStyle? title25 =  Theme.of(context).textTheme.titleLarge;
-    TextStyle? title3 =  Theme.of(context).textTheme.titleMedium;
-    var homeProvider = Provider.of<HomeProvider>(context, listen: false);
-
+    // TextStyle? title3 =  Theme.of(context).textTheme.titleMedium;
     return Padding(
       padding:EdgeInsets.all(4.w),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -21,19 +22,6 @@ class WebAppBar extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 7.w),
             child: SizedBox( height: 2.5.w,child: Text("Exclusive",style:title25)),
           ),
-          Flexible(
-            child: SizedBox(
-                height: 2.5.w,
-                child: ListView.builder(
-                  padding: EdgeInsets.zero,
-                  scrollDirection: Axis.horizontal,
-
-                  itemCount: homeProvider.myTabBar.length,
-                  itemBuilder: (context, index) => SizedBox(
-                      width: 100,
-                      height: 50,
-                      child:Text( homeProvider.myTabBar[index],style: title3))),
-                )),
 
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 0.8.w),
