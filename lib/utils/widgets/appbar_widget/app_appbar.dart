@@ -1,18 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:yoyoecommerce/app_element/header.dart';
+import '../../../app_element/header.dart';
 
-class AppAppbar extends StatefulWidget {
-  const AppAppbar({super.key});
+class AppBar extends StatelessWidget {
+  const AppBar({super.key});
 
-  @override
-  State<AppAppbar> createState() => _AppAppbarState();
-}
-
-class _AppAppbarState extends State<AppAppbar> {
   @override
   Widget build(BuildContext context) {
-    TextStyle? title25 =  Theme.of(context).textTheme.titleLarge;
-    // TextStyle? title3 =  Theme.of(context).textTheme.titleMedium;
+    TextStyle? title25 =  Theme.of(context).textTheme.titleSmall;
     return Padding(
       padding:EdgeInsets.all(4.w),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,

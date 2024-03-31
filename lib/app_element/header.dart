@@ -2,3 +2,8 @@ export 'package:flutter/material.dart';
 export 'package:yoyoecommerce/app_element/app_color.dart';
 export 'package:sizer/sizer.dart';
 export 'package:fluttertoast/fluttertoast.dart';
+export 'package:provider/provider.dart';
+export 'package:responsive_framework/responsive_framework.dart';
+export 'package:sizer/sizer.dart';
+export 'package:yoyoecommerce/utils/widgets/text_field_widget.dart';
+export 'package:yoyoecommerce/app_element/app_theme.dart';

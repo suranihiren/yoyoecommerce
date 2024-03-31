@@ -1,10 +1,6 @@
-import 'package:provider/provider.dart';
-import 'package:responsive_framework/responsive_framework.dart';
-import 'package:sizer/sizer.dart';
-import 'package:yoyoecommerce/view/home/provider.dart';
-import 'package:yoyoecommerce/view/home/view.dart';
 
-import 'app_element/app_theme.dart';
+import 'package:yoyoecommerce/view/home/provider.dart';
+import 'package:yoyoecommerce/view/home/home_screen';
 import 'app_element/header.dart';
 
 void main() {
@@ -21,6 +17,13 @@ class MyAppTheme extends StatefulWidget {
 class _MyAppThemeState extends State<MyAppTheme> {
   @override
   Widget build(BuildContext context) {
+    bgColor=Theme.of(context).backgroundColor;
+    bodyLarge=Theme.of(context).textTheme.bodyLarge;
+    bodyMedium=Theme.of(context).textTheme.bodyMedium;
+    bodySmall=Theme.of(context).textTheme.bodySmall;
+    titleLarge=Theme.of(context).textTheme.titleLarge;
+    titleMedium=Theme.of(context).textTheme.titleMedium;
+    titleSmall=Theme.of(context).textTheme.titleSmall;
     return Sizer(
       builder: (context, orientation, deviceType) {
         return MultiProvider(providers: [
