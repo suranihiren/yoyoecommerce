@@ -1,12 +1,5 @@
 import 'package:yoyoecommerce/app_element/header.dart';
 
-Color? bgColor;
-TextStyle? bodyLarge;
-TextStyle? bodyMedium;
-TextStyle? bodySmall;
-TextStyle? titleLarge;
-TextStyle? titleMedium;
-TextStyle? titleSmall;
 
 class AppTheme {
   // static MyAppTheme myAppTheme =MyAppTheme._();
