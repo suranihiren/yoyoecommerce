@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:sizer/sizer.dart';
@@ -30,7 +31,7 @@ class _MyAppThemeState extends State<MyAppTheme> {
             debugShowCheckedModeBanner: false,
             themeMode: ThemeMode.light,
             theme: AppTheme.lightTheme,
-
+            scrollBehavior: MyCustomScrollBehavior(),
             builder: (context, child) => ResponsiveBreakpoints.builder(child: child!, breakpoints:
             [
                const Breakpoint(start: 0, end: 450, name: MOBILE),
@@ -44,4 +45,13 @@ class _MyAppThemeState extends State<MyAppTheme> {
       },
     );
   }
+}
+class MyCustomScrollBehavior extends MaterialScrollBehavior {
+  // Override behavior methods and getters like dragDevices
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+    // etc.
+  };
 }
