@@ -53,7 +53,6 @@ class _AppAppbarState extends State<AppAppbar> {
 
           }, icon: Icon(Icons.shopping_cart_outlined)),
 
-
         ],
       ),
     );

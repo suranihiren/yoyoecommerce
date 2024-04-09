@@ -1,15 +1,11 @@
-
-
 import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:yoyoecommerce/app_element/app_color.dart';
-
 export  '../app_element/header.dart';
 
 class Utils {
-
  static toastMessage(String message){
    Fluttertoast.showToast(
        msg: message,
