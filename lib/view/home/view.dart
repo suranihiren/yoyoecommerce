@@ -22,12 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           WebAppBar(),
-          Container(
-            color: Colors.orange,
-            height: 300,
-            width: 500,
-            child: AppBanner(bannerList: imgUrl,),
-          )
+          AppBanner(bannerList: imgUrl,)
         ],
       ),
     );

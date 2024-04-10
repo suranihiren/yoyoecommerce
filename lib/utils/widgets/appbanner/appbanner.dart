@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
 import '../../../app_element/header.dart';
 class AppBanner extends StatefulWidget {
   final List bannerList ;
@@ -36,7 +35,7 @@ class _AppBannerState extends State<AppBanner> with TickerProviderStateMixin{
                 enlargeCenterPage: true,
                 autoPlay: true,
                 // enlargeCenterPage: true,
-                height: MediaQuery.of(context).size.height * 0.25,
+                height: MediaQuery.of(context).size.height * 0.50,
                 onPageChanged: (index, reason) {
                   setState(() {
                     _current = index;
@@ -59,7 +58,7 @@ class _AppBannerState extends State<AppBanner> with TickerProviderStateMixin{
                       child: ClipRRect(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         child:  Image.network(
-                         "",
+                         "${widget.bannerList[i.key]}",
                           fit: BoxFit.fill,
                         )
                       ),
