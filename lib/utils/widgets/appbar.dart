@@ -12,7 +12,7 @@ PreferredSize customAppBar()
             children: isMobile==true?[
               Icon(Icons.menu,color: fontColor),
               horizantalSize(8),
-              Text("Exclusive", style: titleMedium),
+              Text("Exclusive", style: titleSmall),
               const Spacer(),
               horizantalSize(8),
               SizedBox(

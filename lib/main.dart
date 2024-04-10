@@ -1,5 +1,6 @@
-import 'package:yoyoecommerce/view/home/view.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:yoyoecommerce/view/home/view.dart';
+
 import 'app_element/header.dart';
 
 void main() {

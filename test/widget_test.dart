@@ -7,9 +7,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:yoyoecommerce/view/home/view.dart';
 
-import 'package:yoyoecommerce/main.dart';
-import 'package:yoyoecommerce/view/home/home_screen';
+
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
