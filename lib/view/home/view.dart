@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:yoyoecommerce/utils/banner/appbanner.dart';
+import 'package:yoyoecommerce/utils/widgets/list_ting_widget.dart';
 
 import '../../app_element/header.dart';
 
@@ -17,7 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: customAppBar(),
       body: Column(children: [
-        AppBanner(bannerList: imgUrl,)
+        AppBanner(bannerList: imgUrl,),
+        ListTingWidget()
       ],),
 
     );

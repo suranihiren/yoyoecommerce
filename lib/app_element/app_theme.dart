@@ -17,17 +17,17 @@ class AppTheme {
       dialogBackgroundColor: white,
       textTheme: TextTheme(
           bodyLarge: TextStyle(
-              color: gray3, fontSize: 10.sp, fontWeight: FontWeight.w500),
+              color: black, fontSize: 15.sp, fontWeight: FontWeight.w500),
           bodyMedium: TextStyle(
-              color: gray3, fontSize: 15.sp, fontWeight: FontWeight.w400),
+              color: black, fontSize: 10.sp, fontWeight: FontWeight.w500),
           bodySmall: TextStyle(
-              color: gray3, fontSize: 18.sp, fontWeight: FontWeight.w400),
+              color: black, fontSize: 10.sp, fontWeight: FontWeight.w500),
           titleLarge: TextStyle(
-              color: black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+              color: black, fontSize: 8.sp, fontWeight: FontWeight.bold),
           titleMedium: TextStyle(
-              color: black, fontSize: 16.sp, fontWeight: FontWeight.w600),
+              color: black, fontSize: 5.sp, fontWeight: FontWeight.bold),
           titleSmall: TextStyle(
-              color: black, fontSize: 20.sp, fontWeight: FontWeight.w600)),
+              color: black, fontSize: 3.sp, fontWeight: FontWeight.w600)),
       splashColor: gray1,
       scaffoldBackgroundColor: white);
 }

@@ -78,7 +78,7 @@ class _AppBannerState extends State<AppBanner> with TickerProviderStateMixin{
   Widget buildPage() => AnimatedSmoothIndicator(
     activeIndex: _current,
     count: widget.bannerList.length,
-    effect: ExpandingDotsEffect(
+    effect: JumpingDotEffect(
         spacing: MediaQuery.of(context).size.width * 0.021,
         dotWidth: MediaQuery.of(context).size.width * 0.05,
         dotHeight: MediaQuery.of(context).size.height * 0.008,
