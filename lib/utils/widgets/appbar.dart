@@ -12,7 +12,7 @@ PreferredSize customAppBar()
             children: isMobile==true?[
               Icon(Icons.menu,color: fontColor),
               horizantalSize(8),
-              Text("Exclusive", style: bodyLarge),
+              Text("Exclusive", style: titleLarge),
               const Spacer(),
               horizantalSize(8),
               SizedBox(
@@ -21,13 +21,13 @@ PreferredSize customAppBar()
                 child: Center(
                   child: TextField(
                     cursorColor: black,
-                    style:bodyMedium,
+                    style:titleMedium,
                     decoration: InputDecoration(
                       suffixIcon: Icon(size: 10.sp,
                         Icons.search,
                         color: black,
                       ),
-                      hintText: "What are you looking for?",hintStyle: bodyMedium,
+                      hintText: "What are you looking for?",hintStyle: titleMedium,
                        contentPadding: EdgeInsets.only(bottom: 0.5.w, left: 2.w),
                       filled: true,
                       fillColor: gray1,

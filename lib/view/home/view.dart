@@ -12,16 +12,18 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List imgUrl =["https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg","https://www.stockvault.net/data/2020/01/18/272608/thumb16.jpg","https://cdn.pixabay.com/photo/2018/10/05/14/39/sunset-3726030_960_720.jpg"];
+  List imgUrl =["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rzSV_YDD9CxA5_X8uw6USZ_0h243oQWUzg&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOAKUP7otiW9IWmflNHSqDUTkOxRJfWHAhA&s","https://mixkit.imgix.net/static/OG-meta/video.jpg?q=80&auto=format%2Ccompress"];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: customAppBar(),
-      body: Column(children: [
-        AppBanner(bannerList: imgUrl,),
-        ListTingWidget()
-      ],),
+      body: SingleChildScrollView(
+        child: Column(children: [
+          AppBanner(bannerList: imgUrl,),
+          ListTingWidget()
+        ],),
+      ),
 
     );
   }
