@@ -40,7 +40,7 @@ class _MyAppThemeState extends State<MyAppTheme> {
                 {
                   isMobile=false;
                 }
-              return HomeScreen();
+              return const HomeScreen();
             },),
           );
         });
