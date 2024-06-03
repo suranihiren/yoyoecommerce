@@ -66,6 +66,7 @@ PreferredSize customAppBar()
                     hintText: "What are you looking for?",hintStyle: bodySmall,
                     contentPadding: EdgeInsets.only(left: 1.w),
                     filled: true,
+
                     fillColor: gray1,
                     border: OutlineInputBorder(
                         borderSide: BorderSide.none,
